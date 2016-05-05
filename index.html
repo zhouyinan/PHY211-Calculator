@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>PHY 211 Calcultor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#" style="color:rgb(207,35,43);"><strong>PHY 211 Calculator</strong></a>
+        </div>
+      </div>
+    </nav>
+    <div class="jumbotron" style="margin-top:40px;">
+      <div class="container">
+        <h1>Grade Report</h1>
+        <p>For Reference Only</p>
+    </div>
+    </div>
+    <div class="container">
+      <form action="result.php" method="POST">
+        <h3>Input your current score items</h3>
+        <h4>1. <small>Homeworks</small></h4>
+        <div style="margin-left:20px;">
+          <p>HW 1&nbsp;<input type="text" name="hw1" required="required"></input>/28</p>
+          <p>HW 2&nbsp;<input type="text" name="hw2" required="required"></input>/30</p>
+          <p>HW 3&nbsp;<input type="text" name="hw3" required="required"></input>/28</p>
+          <p>HW 4&nbsp;<input type="text" name="hw4" required="required"></input>/46</p>
+          <p>HW 5&nbsp;<input type="text" name="hw5" required="required"></input>/30</p>
+          <p>HW 6&nbsp;<input type="text" name="hw6" required="required"></input>/26</p>
+          <p>HW 7&nbsp;<input type="text" name="hw7"></input>/28</p>
+          <p>HW 8&nbsp;<input type="text" name="hw8"></input>/30</p>
+        </div>
+        <h4>2. <small>Computational Projects</small></h4>
+        <div style="margin-left:20px;">
+          <p>Comp.Proj.1&nbsp;<input type="text" name="comp1" required="required"></input>/18</p>
+          <p>Comp.Proj.2&nbsp;<input type="text" name="comp2" required="required"></input>/26</p>
+        </div>
+        <h4>3. <small>Past Exams</small></h4>
+        <p>For each exam input the higher score if you took retake</p>
+        <div style="margin-left:20px;">
+          <p>Exam 1&nbsp;<input type="text" name="exam1" required="required"></input>/115</p>
+          <p>Exam 2&nbsp;<input type="text" name="exam2" required="required"></input>/100</p>
+          <p>Exam 3&nbsp;<input type="text" name="exam3"></input>/100</p>
+        </div>
+        <h4>4. <small>Other Items</small></h4>
+        <div style="margin-left:20px;">
+          <p>Estimated Recitation Attendence&nbsp;<input type="text" name="recitation_participation" required="required"></input>/100</p>
+          <p>Clicker Questions&nbsp;<input type="text" name="clicker_questions" required="required" value="100"></input>/100</p>
+          <p>Facebook Participation Extra&nbsp;<input type="checkbox" name="facebook_participation" value="true"></input></p>
+          <p>Exceptional Reciation Participation&nbsp;<input type="checkbox" name="exceptional_reciation_participation" value="true"></input></p>
+        </div>
+        <p><button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span>&nbsp;Calculate</button></p>
+      </form>
+      <hr />
+    </div>
+    <footer style="text-align:center;margin-bottom:20px;">
+      <p>&copy;2016&nbsp;Yinan Zhou</p>
+    </footer>
+  </body>
+</html>
